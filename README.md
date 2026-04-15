@@ -1,2 +1,5 @@
-# At-risk-students
-Educational profile data and digital footprint of university students who failed their exam session in the previous semester. The data covers 2 previous semesters and the current semester of study.
+# XAI for academic failure prediction
+The project aims to identify relationships between various indicators of students' digital profiles and digital footprints in the LMS and academic failure.
+
+repository contains datasets with educational data, as well as Python code for training predictive models, computing SHAP values for model predictors, and generating visualizations for SHAP analysis of model features.
+
