@@ -45,9 +45,7 @@ Educational profile data and digital footprint of university students who failed
 | prop_debts_after_first_retakes_2sem_prior | float (0.0..1.0) | <br>Доля долгов после первой пересдачи (2 сем. назад) |
 | active_clicks_week_3 | integer (0..N) | <br>Количество активных кликов на 3-й неделе |
 | effective_clicks_week_3 | integer (0..N) | <br>Количество эффективных кликов на 3-й неделе |
-
-**for n = 3, 4, 7, 10, 17, 18**
-
+|**for n = 3, 4, 7, 10, 17, 18:**|--|--|
 | score_week_3 | float (0..100) | Балл активности на 3-й неделе |
 | downtime_week_3 | float (часы) | Время простоя (бездействия) на 3-й неделе |
 | active_clicks_week_3_previous_sem | integer | Активные клики на 3-й неделе предыдущего семестра |
