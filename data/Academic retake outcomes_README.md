@@ -10,26 +10,26 @@ Educational profile data and digital footprint of university students who failed
 | year_of_study | integer<br>(1,2,..,6) | Year of study<br>Текущий год обучения студента |
 | semester | binary<br>(1 - Fall, 2 - Spring) | Semester<br>Семестр |
 | gender | categorical<br>(0 - Female, 1 - Male) | Student gender<br>Пол студента |
-| age | numerical<br>\[0, 1\] | Student's age, mapped to \[0, 1\] using a monotonically increasing function<br>Возраст студента, отображенный в \[0, 1\]  с помощью монотонно возрастающей функции|
-| int_status | categorical<br>(0 - local/1 - international)| International Status<br>Статус интернациональности (local/international) |
-| faculty | categorical (string) | Название факультета |
-| funding_type | categorical | Тип финансирования (бюджет/контракт) |
-| program_level | categorical | Уровень программы (бакалавр/магистр и т.д.) |
-| num_ac_leaves | integer (0..N) | Количество академических отпусков |
-| num_trasfers | integer (0..N) | Количество переводов с другой программы/курса |
-| num_dismissals | integer (0..N) | Количество отчислений (восстановлений) |
-| num_courses_previous_sem | integer | Количество курсов в предыдущем семестре |
-| num_pass/fail_exams_previous_sem | integer | Количество экзаменов типа зачёт/незачёт в предыдущем семестре |
-| num_graded_exams_previous_sem | integer | Количество экзаменов с оценкой в предыдущем семестре |
-| GPA_previous_sem | float (0.0..5.0) | Средний балл (GPA) за предыдущий семестр |
-| num_debts_graded_exams_previous_sem | integer | Количество долгов по экзаменам с оценкой за предыдущий семестр |
-| num_debts_pass/fail_exams_previous_sem | integer | Количество долгов по зачётным экзаменам за предыдущий семестр |
-| GPA_after_first_retakes_previous_sem | float (0.0..5.0) | GPA после первой пересдачи за предыдущий семестр |
-| num_debts_graded_exams_<br>after_first_retakes_previous_sem | integer | Количество долгов по оценкам после первой пересдачи (пред. семестр) |
-| num_debts_pass/fail_exams_<br>after_first_retakes_previous_sem | integer | Количество долгов по зачётам после первой пересдачи (пред. семестр) |
-| GPA_after_second_retakes_previous_sem | float (0.0..5.0) | GPA после второй пересдачи за предыдущий семестр |
-| num_debts_graded_exams_<br>after_second_retakes_previous_sem | integer | Количество долгов по оценкам после второй пересдачи (пред. семестр) |
-| num_debts_pass/fail_exams_<br>after_second_retakes_previous_sem | integer | Количество долгов по зачётам после второй пересдачи (пред. семестр) |
+| age | float<br>\[0, 1\] | Student's age, mapped to \[0, 1\] using a monotonically increasing function<br>Возраст студента, отображенный в \[0, 1\]  с помощью монотонно возрастающей функции|
+| int_status | categorical<br>(0 - local/1 - international)| Indicator of foreign citizenship or international enrollment<br>Индикатор наличия иностранного гражданства или международного набора на программу|
+| faculty | categorical| Faculty (encoded)<br>Факультет(закодирован)|
+| funding_type | categorica<bf>(SF - state-funded, TP - tuition-paying, TT - targeted training ) | Funding type<br>тип финансирования|
+| program_level | categorica<br>(Bachelor, Specialist) | Degree level<br>Уровень программы |
+| num_ac_leaves | integer | Total number of academic leaves taken since enrollment<br>Количество академических отпусков с момента поступления|
+| num_trasfers | integer | Total number of transfers to other degree programs within the university since enrollment<br>Количество переводов с другой программы в рамках университета |
+| num_dismissals | integer | Total number of prior academic dismissals from the university<br>Количество предыдущих отчислений из университета |
+| num_courses_previous_sem | integer | Total number of courses enrolled in the previous semester<br>Количество учебных дисциплин в предыдущем семестре |
+| num_pass/fail_exams_previous_sem | integer | Total number of pass/fail exams in the previous semester<br>Количество зачетов в предыдущем семестре |
+| num_graded_exams_previous_sem | integer | Total number of graded exams in the previous semester<br>Количество экзаменов  в предыдущем семестре |
+| GPA_previous_sem | float | GPA in the immediately preceding semester, before retakes<br>Средний балл зачетной книжки за предыдущий семестр до пересдач |
+| num_debts_graded_exams_previous_sem | integer | Total number of failed graded exams from previous semester (not yet retaken)<br>Количество долгов по экзаменам с оценкой за предыдущий семестр (которые еще не пересданы) |
+| num_debts_pass/fail_exams_previous_sem | integer | Total number of failed pass/fail exams from previous semester (not yet retaken)<br>Количество долгов по зачётам за предыдущий семестр (которые еще не пересданы)|
+| GPA_after_first_retakes_previous_sem | float  | GPA in the previous semester after including results of first retakes<br>средний балл зачетной книжки после первой пересдачи за предыдущий семестр |
+| num_debts_graded_exams_<br>after_first_retakes_previous_sem | integer | Number of failed graded exams from previous semester (after first retakes passed)<br>Количество долгов по экзаменам за предыдущий семестр после первой пересдачи |
+| num_debts_pass/fail_exams_<br>after_first_retakes_previous_sem | integer | Number of failed pass/fail exams from previous semester (after first retakes passed)<br>Количество долгов по зачётам за предыдущий семестр после первой пересдачи  |
+| GPA_after_second_retakes_previous_sem | float (0.0..5.0) | <br>GPA после второй пересдачи за предыдущий семестр |
+| num_debts_graded_exams_<br>after_second_retakes_previous_sem | integer | <br>Количество долгов по оценкам после второй пересдачи (пред. семестр) |
+| num_debts_pass/fail_exams_<br>after_second_retakes_previous_sem | integer | <br>Количество долгов по зачётам после второй пересдачи (пред. семестр) |
 | num_courses_2sem_prior | integer | Количество курсов за 2 семестра до текущего |
 | num_pass/fail_exams_2sem_prior | integer | Количество зачётных экзаменов за 2 семестра до текущего |
 | num_graded_exams_2sem_prior | integer | Количество экзаменов с оценкой за 2 семестра до текущего |
