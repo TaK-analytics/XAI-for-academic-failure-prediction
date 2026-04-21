@@ -1,7 +1,5 @@
 # Academic retake outcomes
 Educational profile data and digital footprint of university students who failed their exam session in the previous semester. The data covers 2 previous semesters and the current semester of study. 
-# Academic retake outcomes
-Educational profile data and digital footprint of university students who failed their exam session in the previous semester. The data covers 2 previous semesters and the current semester of study. 
 
 ### Variables:
 
@@ -13,7 +11,7 @@ Educational profile data and digital footprint of university students who failed
 | semester | binary<br>(1 - Fall, 2 - Spring) | Semester<br>Семестр |
 | gender | categorical<br>(0 - Female, 1 - Male) | Student gender<br>Пол студента |
 | age | numerical<br>\[0, 1\] | Student's age, mapped to \[0, 1\] using a monotonically increasing function<br>Возраст студента, отображенный в \[0, 1\]  с помощью монотонно возрастающей функции|
-| int_status | categorical | Статус интернациональности (local/international) |
+| int_status | categorical<br>(0 - local/1 - international)| International Status<br>Статус интернациональности (local/international) |
 | faculty | categorical (string) | Название факультета |
 | funding_type | categorical | Тип финансирования (бюджет/контракт) |
 | program_level | categorical | Уровень программы (бакалавр/магистр и т.д.) |
@@ -27,11 +25,11 @@ Educational profile data and digital footprint of university students who failed
 | num_debts_graded_exams_previous_sem | integer | Количество долгов по экзаменам с оценкой за предыдущий семестр |
 | num_debts_pass/fail_exams_previous_sem | integer | Количество долгов по зачётным экзаменам за предыдущий семестр |
 | GPA_after_first_retakes_previous_sem | float (0.0..5.0) | GPA после первой пересдачи за предыдущий семестр |
-| num_debts_graded_exams_after_first_retakes_previous_sem | integer | Количество долгов по оценкам после первой пересдачи (пред. семестр) |
-| num_debts_pass/fail_exams_after_first_retakes_previous_sem | integer | Количество долгов по зачётам после первой пересдачи (пред. семестр) |
+| num_debts_graded_exams_<br>after_first_retakes_previous_sem | integer | Количество долгов по оценкам после первой пересдачи (пред. семестр) |
+| num_debts_pass/fail_exams_<br>after_first_retakes_previous_sem | integer | Количество долгов по зачётам после первой пересдачи (пред. семестр) |
 | GPA_after_second_retakes_previous_sem | float (0.0..5.0) | GPA после второй пересдачи за предыдущий семестр |
-| num_debts_graded_exams_after_second_retakes_previous_sem | integer | Количество долгов по оценкам после второй пересдачи (пред. семестр) |
-| num_debts_pass/fail_exams_after_second_retakes_previous_sem | integer | Количество долгов по зачётам после второй пересдачи (пред. семестр) |
+| num_debts_graded_exams_<br>after_second_retakes_previous_sem | integer | Количество долгов по оценкам после второй пересдачи (пред. семестр) |
+| num_debts_pass/fail_exams_<br>after_second_retakes_previous_sem | integer | Количество долгов по зачётам после второй пересдачи (пред. семестр) |
 | num_courses_2sem_prior | integer | Количество курсов за 2 семестра до текущего |
 | num_pass/fail_exams_2sem_prior | integer | Количество зачётных экзаменов за 2 семестра до текущего |
 | num_graded_exams_2sem_prior | integer | Количество экзаменов с оценкой за 2 семестра до текущего |
@@ -39,8 +37,8 @@ Educational profile data and digital footprint of university students who failed
 | num_debts_graded_exams_2sem_prior | integer | Количество долгов по оценкам (2 семестра назад) |
 | num_debts_pass/fail_exams_2sem_prior | integer | Количество долгов по зачётам (2 семестра назад) |
 | GPA_after_first_retakes_2sem_prior | float (0.0..5.0) | GPA после первой пересдачи (2 семестра назад) |
-| num_debts_graded_exams_after_first_retakes_2sem_prior | integer | Долги по оценкам после первой пересдачи (2 сем. назад) |
-| num_debts_pass/fail_exams_after_first_retakes_2sem_prior | integer | Долги по зачётам после первой пересдачи (2 сем. назад) |
+| num_debts_graded_exams_<br>after_first_retakes_2sem_prior | integer | Долги по оценкам после первой пересдачи (2 сем. назад) |
+| num_debts_pass/fail_exams_<br>after_first_retakes_2sem_prior | integer | Долги по зачётам после первой пересдачи (2 сем. назад) |
 | prop_debts_previous_sem | float (0.0..1.0) | Доля долгов за предыдущий семестр (до пересдач) |
 | prop_debts_after_first_retakes_previous_sem | float (0.0..1.0) | Доля долгов после первой пересдачи (пред. семестр) |
 | prop_debts_2sem_prior | float (0.0..1.0) | Доля долгов за 2 семестра до текущего |
