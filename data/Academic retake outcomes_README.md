@@ -43,8 +43,8 @@ Educational profile data and digital footprint of university students who failed
 | prop_debts_after_first_retakes_previous_sem | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the previous semester after first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в прошлос семестре после периода первых пересдач*|
 | prop_debts_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior)<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего до проведения пересдач*|
 | prop_debts_after_first_retakes_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior) afer first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего после периода первых пересдач*|
-|**for n = 3, 4, 7, 10, 17, 18:**|||
-| active_clicks_week_3 | integer (0..N) | <br>Количество активных кликов на 3-й неделе |
+|**for N = 3, 4, 7, 10, 17, 18:**|||
+| active_clicks_week_3 | float| Total count of user interactions with the LMS by week N of the current semester (standardized by dividing by the average number of active clicks in their study group)<br>Количество кликов в LMS к неделе N текущего семестра (стандартизованное делением на среднее число кликов в учебной группе)|
 | effective_clicks_week_3 | integer (0..N) | <br>Количество эффективных кликов на 3-й неделе |
 | score_week_3 | float (0..100) | Балл активности на 3-й неделе |
 | downtime_week_3 | float (часы) | Время простоя (бездействия) на 3-й неделе |
