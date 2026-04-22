@@ -27,16 +27,16 @@ Educational profile data and digital footprint of university students who failed
 | GPA_after_first_retakes_previous_sem | float  | GPA in the previous semester after including results of first retakes<br>*Средний балл зачетной книжки после первой пересдачи за предыдущий семестр* |
 | num_debts_graded_exams_<br>after_first_retakes_previous_sem | integer | Number of failed graded exams from previous semester (after first retakes passed)<br>*Количество долгов по экзаменам за предыдущий семестр после первой пересдачи* |
 | num_debts_pass/fail_exams_<br>after_first_retakes_previous_sem | integer | Number of failed pass/fail exams from previous semester (after first retakes passed)<br>*Количество долгов по зачётам за предыдущий семестр после первой пересдачи*  |
-| GPA_after_second_retakes_previous_sem | float  | GPA in the previous semester after in-cluding results of second retakes<br>*Средний балл зачетки после второй пересдачи за предыдущий семестр* |
+| GPA_after_second_retakes_previous_sem | float  | GPA in the previous semester after including results of second retakes<br>*Средний балл зачетки после второй пересдачи за предыдущий семестр* |
 | num_debts_graded_exams_<br>after_second_retakes_previous_sem | integer | Number of failed graded exams from previous semester (after second retakes passed)<br>*Количество долгов по экзаменам предыдущего семестра после второй пересдачи*|
 | num_debts_pass/fail_exams_<br>after_second_retakes_previous_sem | integer | Number of failed pass/fail exams from previous semester (after second retakes passed)<br>*Количество долгов по зачётам предыдущего семестра после второй пересдачи*|
 | num_courses_2sem_prior | integer | Number of courses enrolled from two semesters prior<br>*Количество учебных дисциплин за 2 семестра до текущего* |
-| num_pass/fail_exams_2sem_prior | integer | <br>Количество зачётных экзаменов за 2 семестра до текущего |
-| num_graded_exams_2sem_prior | integer | <br>Количество экзаменов с оценкой за 2 семестра до текущего |
-| GPA_2sem_prior | float (0.0..5.0) | <br>GPA за 2 семестра до текущего |
-| num_debts_graded_exams_2sem_prior | integer | <br>Количество долгов по оценкам (2 семестра назад) |
-| num_debts_pass/fail_exams_2sem_prior | integer | <br>Количество долгов по зачётам (2 семестра назад) |
-| GPA_after_first_retakes_2sem_prior | float (0.0..5.0) | <br>GPA после первой пересдачи (2 семестра назад) |
+| num_pass/fail_exams_2sem_prior | integer | Total number of pass/fail exams from two semesters prior<br>*Количество зачётов за 2 семестра до текущего* |
+| num_graded_exams_2sem_prior | integer |  Total number of graded exams from two semesters prior<br>*Количество экзаменов с оценкой за 2 семестра до текущего* |
+| GPA_2sem_prior | float| GPA in the semester before the previous one, before retakes<br>*Средний балл зачетной книжки за 2 семестра до текущего* |
+| num_debts_graded_exams_2sem_prior | integer | Number of failed graded exams from two semesters prior (not yet retaken)<br>*Количество долгов по экзаменам, полученных за 2 семестра до текущего и еще не пересданных* |
+| num_debts_pass/fail_exams_2sem_prior | integer | Number of failed pass/fail exams from two semesters prior (not yet retaken)<br>*Количество долгов по зачётам, полученных за 2 семестра до текущего и еще не пересданных* |
+| GPA_after_first_retakes_2sem_prior | float | GPA from two se-mesters prior after including results of first retakes<br>*Средний балл зачетной книжки за два семестра до текущего после первой пересдачи* |
 | num_debts_graded_exams_<br>after_first_retakes_2sem_prior | integer | <br>Долги по оценкам после первой пересдачи (2 сем. назад) |
 | num_debts_pass/fail_exams_<br>after_first_retakes_2sem_prior | integer | <br>Долги по зачётам после первой пересдачи (2 сем. назад) |
 | prop_debts_previous_sem | float (0.0..1.0) | <br>Доля долгов за предыдущий семестр (до пересдач) |
