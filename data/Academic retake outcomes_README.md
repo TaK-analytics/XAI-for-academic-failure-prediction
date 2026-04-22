@@ -44,74 +44,19 @@ Educational profile data and digital footprint of university students who failed
 | prop_debts_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior)<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего до проведения пересдач*|
 | prop_debts_after_first_retakes_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior) afer first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего после периода первых пересдач*|
 |**for N = 3, 4, 7, 10, 17, 18:**|||
-| active_clicks_week_3 | float| Total count of user interactions with the LMS by week N of the current semester (standardized by dividing by the average number of active clicks in their study group)<br>Количество кликов в LMS к неделе N текущего семестра (стандартизованное делением на среднее число кликов в учебной группе)|
-| effective_clicks_week_3 | integer (0..N) | <br>Количество эффективных кликов на 3-й неделе |
-| score_week_3 | float (0..100) | Балл активности на 3-й неделе |
-| downtime_week_3 | float (часы) | Время простоя (бездействия) на 3-й неделе |
-| active_clicks_week_3_previous_sem | integer | Активные клики на 3-й неделе предыдущего семестра |
-| effective_clicks_week_3_previous_sem | integer | Эффективные клики на 3-й неделе предыдущего семестра |
-| score_week_3_previous_sem | float | Балл на 3-й неделе предыдущего семестра |
-| downtime_week_3_previous_sem | float | Время простоя на 3-й неделе предыдущего семестра |
-| active_clicks_week_3_2sem_prior | integer | Активные клики на 3-й неделе (2 семестра назад) |
-| effective_clicks_week_3_2sem_prior | integer | Эффективные клики на 3-й неделе (2 семестра назад) |
-| score_week_3_2sem_prior | float | Балл на 3-й неделе (2 семестра назад) |
-| downtime_week_3_2sem_prior | float | Время простоя на 3-й неделе (2 семестра назад) |
-| active_clicks_week_4 | integer | Активные клики на 4-й неделе |
-| effective_clicks_week_4 | integer | Эффективные клики на 4-й неделе |
-| score_week_4 | float | Балл на 4-й неделе |
-| downtime_week_4 | float | Время простоя на 4-й неделе |
-| active_clicks_week_4_previous_sem | integer | Активные клики на 4-й неделе предыдущего семестра |
-| effective_clicks_week_4_previous_sem | integer | Эффективные клики на 4-й неделе предыдущего семестра |
-| score_week_4_previous_sem | float | Балл на 4-й неделе предыдущего семестра |
-| downtime_week_4_previous_sem | float | Время простоя на 4-й неделе предыдущего семестра |
-| active_clicks_week_4_2sem_prior | integer | Активные клики на 4-й неделе (2 семестра назад) |
-| effective_clicks_week_4_2sem_prior | integer | Эффективные клики на 4-й неделе (2 семестра назад) |
-| score_week_4_2sem_prior | float | Балл на 4-й неделе (2 семестра назад) |
-| downtime_week_4_2sem_prior | float | Время простоя на 4-й неделе (2 семестра назад) |
-| active_clicks_week_7 | integer | Активные клики на 7-й неделе |
-| effective_clicks_week_7 | integer | Эффективные клики на 7-й неделе |
-| score_week_7 | float | Балл на 7-й неделе |
-| downtime_week_7 | float | Время простоя на 7-й неделе |
-| active_clicks_week_7_previous_sem | integer | Активные клики на 7-й неделе предыдущего семестра |
-| effective_clicks_week_7_previous_sem | integer | Эффективные клики на 7-й неделе предыдущего семестра |
-| score_week_7_previous_sem | float | Балл на 7-й неделе предыдущего семестра |
-| downtime_week_7_previous_sem | float | Время простоя на 7-й неделе предыдущего семестра |
-| active_clicks_week_7_2sem_prior | integer | Активные клики на 7-й неделе (2 семестра назад) |
-| effective_clicks_week_7_2sem_prior | integer | Эффективные клики на 7-й неделе (2 семестра назад) |
-| score_week_7_2sem_prior | float | Балл на 7-й неделе (2 семестра назад) |
-| downtime_sem2_week_7 | float | Время простоя на 7-й неделе 2-го семестра (спец. метрика) |
-| active_clicks_week_10 | integer | Активные клики на 10-й неделе |
-| effective_clicks_week_10 | integer | Эффективные клики на 10-й неделе |
-| score_week_10 | float | Балл на 10-й неделе |
-| downtime_week_10 | float | Время простоя на 10-й неделе |
-| active_clicks_week_10_previous_sem | integer | Активные клики на 10-й неделе предыдущего семестра |
-| effective_clicks_week_10_previous_sem | integer | Эффективные клики на 10-й неделе предыдущего семестра |
-| score_week_10_previous_sem | float | Балл на 10-й неделе предыдущего семестра |
-| downtime_week_10_previous_sem | float | Время простоя на 10-й неделе предыдущего семестра |
-| active_clicks_week_10_2sem_prior | integer | Активные клики на 10-й неделе (2 семестра назад) |
-| effective_clicks_week_10_2sem_prior | integer | Эффективные клики на 10-й неделе (2 семестра назад) |
-| score_week_10_2sem_prior | float | Балл на 10-й неделе (2 семестра назад) |
-| downtime_week_10_2sem_prior | float | Время простоя на 10-й неделе (2 семестра назад) |
-| active_clicks_week_17 | integer | Активные клики на 17-й неделе |
-| effective_clicks_week_17 | integer | Эффективные клики на 17-й неделе |
-| score_week_17 | float | Балл на 17-й неделе |
-| downtime_week_17 | float | Время простоя на 17-й неделе |
-| active_clicks_week_17_previous_sem | integer | Активные клики на 17-й неделе предыдущего семестра |
-| effective_clicks_week_17_previous_sem | integer | Эффективные клики на 17-й неделе предыдущего семестра |
-| score_week_17_previous_sem | float | Балл на 17-й неделе предыдущего семестра |
-| downtime_week_17_previous_sem | float | Время простоя на 17-й неделе предыдущего семестра |
-| active_clicks_week_17_2sem_prior | integer | Активные клики на 17-й неделе (2 семестра назад) |
-| effective_clicks_week_17_2sem_prior | integer | Эффективные клики на 17-й неделе (2 семестра назад) |
-| score_week_17_2sem_prior | float | Балл на 17-й неделе (2 семестра назад) |
-| downtime_sem2_week_17 | float | Время простоя на 17-й неделе 2-го семестра |
-| active_clicks_week_18 | integer | Активные клики на 18-й неделе |
-| effective_clicks_week_18 | integer | Эффективные клики на 18-й неделе |
-| score_week_18 | float | Балл на 18-й неделе |
-| downtime_week_18 | float | Время простоя на 18-й неделе |
-| active_clicks_week_18_previous_sem | integer | Активные клики на 18-й неделе предыдущего семестра |
-| effective_clicks_week_18_previous_sem | integer | Эффективные клики на 18-й неделе предыдущего семестра |
-| score_week_18_previous_sem | float | Балл на 18-й неделе предыдущего семестра |
-| downtime_week_18_previous_sem | float | Время простоя на 18-й неделе предыдущего семестра |
-| active_clicks_week_18_2sem_prior | integer | Активные клики на 18-й неделе (2 семестра назад) |
-| effective_clicks_week_18_2sem_prior | integer | Эффективные клики на 18-й неделе (2 семестра назад) |
-| score_week_18_2sem_prior | float | Балл на 18-й неделе (2 семестра назад) |
+| active_clicks_week_N | float| Total count of user interactions with the LMS by week N of the current semester (standardized by dividing by the average number of active clicks in their study group)<br>*Количество кликов в LMS к неделе N текущего семестра (стандартизованное делением на среднее число кликов в учебной группе)*|
+| effective_clicks_week_N | float| Total count of effective\* user interactions with the LMS by week N of the current semester (standardized by dividing by the average number of effective clicks in their study group)<br>*Количество эффективных\* кликов в LMS к неделе N текущего семестра (стандартизованное делением на среднее число эффективных кликов в учебной группе)*|
+| score_week_N | float| Average grade across all e-courses the student is enrolled in by the week N of the current semester (standardized by dividing by the average score in their study group)<br>*Средний балл студента по всем электронным курсам, к которым он подписан в LMS, к неделе N текущего семестра (стандартизованное делением на среднее значение этого показателя в учебной группе)*|
+| downtime_week_N | integer | Total duration of inactivity in the LMS (in weeks) by week N of the current semester<br>*Длительность отсутствия активности студента в LMS (в неделях) к неделе N текущего семестра*|
+| active_clicks_week_N_previous_sem | float|Total count of user interactions with the LMS by week N of the previous semester (standardized)<br>*Количество кликов в LMS к неделе N предыдущего семестра (стандартизованное)*|
+| effective_clicks_week_N_previous_sem | float | Total count of effective user interactions with the LMS by week N of the previous semester (standardized)<br>*Количество эффективных кликов в LMS к неделе N предыдущего семестра (стандартизованное)* |
+| score_week_N_previous_sem | float | Average grade across all e-courses the student is enrolled in by the week N of the previous semester (standardized)<br>*Средний балл студента по всем электронным курсам, к которым он подписан в LMS, к неделе N предыдущего семестра (стандартизованное)*|
+| downtime_week_N_previous_sem | integer | Total duration of inactivity in the LMS (in weeks) by week N of the previous semester<br>*Длительность отсутствия активности студента в LMS (в неделях) к неделе N предыдущего семестра*|
+| active_clicks_week_N_2sem_prior | float|Total count of user interactions with the LMS by week N two semesters prior (standardized)<br>*Количество кликов в LMS к неделе N два семестра назад (стандартизованное) |
+| effective_clicks_week_3_2sem_prior |  float | Total count of effective user interactions with the LMS by week N two semesters prior (standardized)<br>*Количество эффективных кликов в LMS к неделе N два семестра назад (стандартизованное)*  |
+| score_week_3_2sem_prior | float |Average grade across all e-courses the student is enrolled in by the week N two semesters prior (standardized)<br>*Средний балл студента по всем электронным курсам, к которым он подписан в LMS, к неделе N два семестра назад (стандартизованное)* |
+| downtime_week_3_2sem_prior | integer | Total duration of inactivity in the LMS (in weeks) by week N two semesters prior<br>*Длительность отсутствия активности студента в LMS (в неделях) к неделе N два семестра назад* |
+
+\* **Effective clicks** — interactions with the e-course that change its content, e.g., submitting assignments, test attempts, etc. 
+
+\* **Эффективные клики** — *взаимодействя пользователя с электронным курсом, которое меняет его содержимое, например, отправка на проверку выполненных заданий, прохождение попытки тестирования и т.п.* 
