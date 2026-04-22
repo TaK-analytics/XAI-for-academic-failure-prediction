@@ -13,7 +13,7 @@ Educational profile data and digital footprint of university students who failed
 | age | float<br>\[0, 1\] | Student's age, mapped to \[0, 1\] using a monotonically increasing function<br>*Возраст студента, отображенный в \[0, 1\]  с помощью монотонно возрастающей функции*|
 | int_status | categorical<br>(0 - local/1 - international)| Indicator of foreign citizenship or international enrollment<br>*Индикатор наличия иностранного гражданства или международного набора на программу*|
 | faculty | categorical| Faculty (encoded)<br>*Факультет(закодирован)*|
-| funding_type | categorical<bf>(SF - state-funded, TP - tuition-paying, TT - targeted training ) |Funding type<br>*Тип финансирования*|
+| funding_type | categorical<br>(SF - state-funded, TP - tuition-paying, TT - targeted training ) |Funding type<br>*Тип финансирования*|
 | program_level | categorical<br>(Bachelor, Specialist) | Degree level<br>*Уровень программы* |
 | num_ac_leaves | integer | Total number of academic leaves taken since enrollment<br>*Количество академических отпусков с момента поступления*|
 | num_trasfers | integer | Total number of transfers to other degree programs within the university since enrollment<br>*Количество переводов с другой программы в рамках университета* |
@@ -37,15 +37,15 @@ Educational profile data and digital footprint of university students who failed
 | num_debts_graded_exams_2sem_prior | integer | Number of failed graded exams from two semesters prior (not yet retaken)<br>*Количество долгов по экзаменам, полученных за 2 семестра до текущего и еще не пересданных* |
 | num_debts_pass/fail_exams_2sem_prior | integer | Number of failed pass/fail exams from two semesters prior (not yet retaken)<br>*Количество долгов по зачётам, полученных за 2 семестра до текущего и еще не пересданных* |
 | GPA_after_first_retakes_2sem_prior | float | GPA from two se-mesters prior after including results of first retakes<br>*Средний балл зачетной книжки за два семестра до текущего после первой пересдачи* |
-| num_debts_graded_exams_<br>after_first_retakes_2sem_prior | integer | <br>Долги по оценкам после первой пересдачи (2 сем. назад) |
-| num_debts_pass/fail_exams_<br>after_first_retakes_2sem_prior | integer | <br>Долги по зачётам после первой пересдачи (2 сем. назад) |
-| prop_debts_previous_sem | float (0.0..1.0) | <br>Доля долгов за предыдущий семестр (до пересдач) |
-| prop_debts_after_first_retakes_previous_sem | float (0.0..1.0) | <br>Доля долгов после первой пересдачи (пред. семестр) |
-| prop_debts_2sem_prior | float (0.0..1.0) | <br>Доля долгов за 2 семестра до текущего |
-| prop_debts_after_first_retakes_2sem_prior | float (0.0..1.0) | <br>Доля долгов после первой пересдачи (2 сем. назад) |
+| num_debts_graded_exams_<br>after_first_retakes_2sem_prior | integer | Number of failed graded exams from two semesters prior (after first retakes passed)<br>*Число долгов за экзамены сессии за 2 семестра до текущего после первой пересдачи* |
+| num_debts_pass/fail_exams_<br>after_first_retakes_2sem_prior | integer | <Number of failed pass/fail exams from two semesters prior (after first retakes passed)<br>*Число долгов за зачеты сессии за 2 семестра до текущего после первой пересдачи* |
+| prop_debts_previous_sem | float (0.0..1.0) |The ratio of the number of failed courses to the total number of courses in the previous semester before retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в прошлов семестре до проведения пересдач*|
+| prop_debts_after_first_retakes_previous_sem | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the previous semester after first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в прошлос семестре после периода первых пересдач*|
+| prop_debts_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior)<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего до проведения пересдач*|
+| prop_debts_after_first_retakes_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior) afer first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего после периода первых пересдач*|
+|**for n = 3, 4, 7, 10, 17, 18:**|||
 | active_clicks_week_3 | integer (0..N) | <br>Количество активных кликов на 3-й неделе |
 | effective_clicks_week_3 | integer (0..N) | <br>Количество эффективных кликов на 3-й неделе |
-|**for n = 3, 4, 7, 10, 17, 18:**|--|--|
 | score_week_3 | float (0..100) | Балл активности на 3-й неделе |
 | downtime_week_3 | float (часы) | Время простоя (бездействия) на 3-й неделе |
 | active_clicks_week_3_previous_sem | integer | Активные клики на 3-й неделе предыдущего семестра |
