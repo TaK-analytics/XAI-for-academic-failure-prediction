@@ -1,10 +1,17 @@
-# Academic retake outcomes
-Educational profile data and digital footprint from LMS of 18,192 university students who failed their exam session in the previous semester. The data covers 2 previous semesters and the current semester of study. 
+# Academic retake outcomes 
+# *Результаты пересдачи академических задолженностей*
+
+Educational profile data and digital footprint from LMS of 18,192 university students who failed their exam session in the previous semester. The data covers 2 previous semesters and the current semester of study. <br>
+*Данные об образовательном профиле и цифровом следе в LMS 18 192 студентов университета, не сдавших сессию в предыдущем семестре. Данные охватывают 2 предыдущих семестра и текущий семестр обучения.*
 
 The dataset can be used for:
-- solving prediction tasks, for example, to predict the success of retaking failed subjects;
-- for clustering students based on their education profile or activity in LMS, etc.
-  
+- solving prediction tasks, for example, to predict the success of retaking failed exams;
+- clustering students based on their educational profile or activity in LMS, etc.
+
+*Датасет может быть использован для:*
+- *решения задач прогнозирования, например, для прогнозирования успешности пересдачи несданных дисциплин;*
+- *кластеризации студентов на основе их образовательного профиля или активности в LMS и т.д.*
+
 ### Variables:
 
 | Feature | Type and Possible Values | Description |
