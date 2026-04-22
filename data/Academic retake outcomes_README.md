@@ -1,6 +1,10 @@
 # Academic retake outcomes
-Educational profile data and digital footprint of university students who failed their exam session in the previous semester. The data covers 2 previous semesters and the current semester of study. 
+Educational profile data and digital footprint from LMS of 18,192 university students who failed their exam session in the previous semester. The data covers 2 previous semesters and the current semester of study. 
 
+The dataset can be used for:
+- solving prediction tasks, for example, to predict the success of retaking failed subjects;
+- for clustering students based on their education profile or activity in LMS, etc.
+  
 ### Variables:
 
 | Feature | Type and Possible Values | Description |
@@ -38,11 +42,11 @@ Educational profile data and digital footprint of university students who failed
 | num_debts_pass/fail_exams_2sem_prior | integer | Number of failed pass/fail exams from two semesters prior (not yet retaken)<br>*Количество долгов по зачётам, полученных за 2 семестра до текущего и еще не пересданных* |
 | GPA_after_first_retakes_2sem_prior | float | GPA from two se-mesters prior after including results of first retakes<br>*Средний балл зачетной книжки за два семестра до текущего после первой пересдачи* |
 | num_debts_graded_exams_<br>after_first_retakes_2sem_prior | integer | Number of failed graded exams from two semesters prior (after first retakes passed)<br>*Число долгов за экзамены сессии за 2 семестра до текущего после первой пересдачи* |
-| num_debts_pass/fail_exams_<br>after_first_retakes_2sem_prior | integer | <Number of failed pass/fail exams from two semesters prior (after first retakes passed)<br>*Число долгов за зачеты сессии за 2 семестра до текущего после первой пересдачи* |
-| prop_debts_previous_sem | float (0.0..1.0) |The ratio of the number of failed courses to the total number of courses in the previous semester before retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в прошлов семестре до проведения пересдач*|
-| prop_debts_after_first_retakes_previous_sem | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the previous semester after first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в прошлос семестре после периода первых пересдач*|
-| prop_debts_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior)<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего до проведения пересдач*|
-| prop_debts_after_first_retakes_2sem_prior | float (0.0..1.0) | The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior) afer first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего после периода первых пересдач*|
+| num_debts_pass/fail_exams_<br>after_first_retakes_2sem_prior | integer | Number of failed pass/fail exams from two semesters prior (after first retakes passed)<br>*Число долгов за зачеты сессии за 2 семестра до текущего после первой пересдачи* |
+| prop_debts_previous_sem | float|The ratio of the number of failed courses to the total number of courses in the previous semester before retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в прошлов семестре до проведения пересдач*|
+| prop_debts_after_first_retakes_previous_sem | float| The ratio of the number of failed courses to the total number of courses in the previous semester after first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в прошлос семестре после периода первых пересдач*|
+| prop_debts_2sem_prior | float| The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior)<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего до проведения пересдач*|
+| prop_debts_after_first_retakes_2sem_prior | float| The ratio of the number of failed courses to the total number of courses in the semester (from 2 semesters prior) afer first retakes<br>*Отношение числа несданных дисциплин в общему числу дисциплин в семестре за 2 семестра до текущего после периода первых пересдач*|
 |**for N = 3, 4, 7, 10, 17, 18:**|||
 | active_clicks_week_N | float| Total count of user interactions with the LMS by week N of the current semester (standardized by dividing by the average number of active clicks in their study group)<br>*Количество кликов в LMS к неделе N текущего семестра (стандартизованное делением на среднее число кликов в учебной группе)*|
 | effective_clicks_week_N | float| Total count of effective\* user interactions with the LMS by week N of the current semester (standardized by dividing by the average number of effective clicks in their study group)<br>*Количество эффективных\* кликов в LMS к неделе N текущего семестра (стандартизованное делением на среднее число эффективных кликов в учебной группе)*|
